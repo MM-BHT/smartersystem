@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span className="text-gray-300">info@skywaytechnology.de</span>
+                <span className="text-gray-300">info@smartersystem.de</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; Sky Way Technology 2025</p>
+          <p>&copy; Smarter System 2025</p>
         </div>
       </div>
     </footer>

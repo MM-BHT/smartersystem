@@ -21,7 +21,7 @@ const Impressum: React.FC = () => {
               
               <div className="bg-gray-50 p-6 rounded-lg mb-8">
                 <p className="mb-4">
-                  <strong>Sky Way Technology</strong><br />
+                  <strong>Smarter System</strong><br />
                   Eisackstraße 37<br />
                   10827 Berlin
                 </p>
@@ -40,7 +40,7 @@ const Impressum: React.FC = () => {
               <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">Kontakt</h3>
               <p className="mb-6">
                 <strong>Telefon:</strong> +49 178 2087960<br />
-                <strong>E-Mail:</strong> info@skywaytechnology.de
+                <strong>E-Mail:</strong> info@smartersystem.de
               </p>
 
               <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">Umsatzsteuer-ID</h3>

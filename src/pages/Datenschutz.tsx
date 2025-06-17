@@ -18,7 +18,7 @@ const Datenschutz: React.FC = () => {
           <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-600 mb-8">
-                Datenschutzerklärung für Sky Way Technology<br />
+                Datenschutzerklärung für Smarter System<br />
                 Stand: Juni 2024
               </p>
 
@@ -29,16 +29,16 @@ const Datenschutz: React.FC = () => {
               <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Verantwortlicher</h2>
               <div className="bg-gray-50 p-6 rounded-lg mb-6">
                 <p>
-                  Sky Way Technology<br />
+                  Smarter System<br />
                   Eisackstraße 37<br />
                   10827 Berlin<br />
                   Deutschland
                 </p>
                 <p className="mt-4">
                   <strong>Vertretungsberechtigt Personen:</strong> Aleksandar Vukanovic, Marian Matijevic, Milos Geric<br />
-                  <strong>E-Mail:</strong> info@skywaytechnology.de<br />
+                  <strong>E-Mail:</strong> info@smartersystem.de<br />
                   <strong>Telefon:</strong> +49 178 2087960<br />
-                  <strong>Impressum:</strong> <a href="/impressum" className="text-blue-600 hover:text-blue-700">https://skywaytechnology.de/impressum</a>
+                  <strong>Impressum:</strong> <a href="/impressum" className="text-blue-600 hover:text-blue-700">https://smartersystem.de/impressum</a>
                 </p>
               </div>
 

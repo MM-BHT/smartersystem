@@ -166,7 +166,7 @@ const Contact: React.FC = () => {
                   className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                 />
                 <label htmlFor="newsletter" className="text-sm text-gray-700">
-                  Ich möchte aktuelle News und Angebote von Sky Way Technology erhalten. (Diese können jederzeit abbestellt werden.)
+                  Ich möchte aktuelle News und Angebote von Smarter System erhalten. (Diese können jederzeit abbestellt werden.)
                 </label>
               </div>
             </div>
@@ -202,8 +202,8 @@ const Contact: React.FC = () => {
               <Mail className="h-12 w-12 text-blue-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">E-Mail</h3>
               <p className="text-gray-600 mb-2">Schreiben Sie uns</p>
-              <a href="mailto:info@skywaytechnology.de" className="text-blue-600 hover:text-blue-700 font-medium">
-                info@skywaytechnology.de
+              <a href="mailto:info@smartersystem.de" className="text-blue-600 hover:text-blue-700 font-medium">
+                info@smartersystem.de
               </a>
             </div>
 
