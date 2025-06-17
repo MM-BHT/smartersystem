@@ -21,7 +21,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 transition-colors">
-            <img src="/logo.png" alt="Smarter System Logo" className="h-8 w-8" />
+            <img src="logo.png" alt="Smarter System Logo" className="h-8 w-8" />
             <span className="font-bold text-xl">Smarter System</span>
           </Link>
 
