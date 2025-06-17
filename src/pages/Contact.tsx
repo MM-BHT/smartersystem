@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
+import { Phone, Mail, Clock, Send } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -15,19 +15,14 @@ const Contact: React.FC = () => {
     newsletter: false,
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     const { name, value, type } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: type === 'checkbox' ? (e.target as HTMLInputElement).checked : value
+      [name]: type === 'checkbox' ? (e.target as HTMLInputElement).checked : value,
     }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-    alert('Vielen Dank für Ihre Anfrage! Wir melden uns schnellstmöglich bei Ihnen.');
   };
 
   return (
@@ -35,12 +30,9 @@ const Contact: React.FC = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Kontaktieren Sie uns
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Kontaktieren Sie uns</h1>
           <p className="text-xl opacity-90 max-w-2xl mx-auto">
-            Lassen Sie uns gemeinsam Ihr Energie-Projekt planen. 
-            Wir freuen uns auf Ihre Anfrage!
+            Lassen Sie uns gemeinsam Ihr Energie-Projekt planen. Wir freuen uns auf Ihre Anfrage!
           </p>
         </div>
       </section>
@@ -48,7 +40,18 @@ const Contact: React.FC = () => {
       {/* Contact Form */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <form onSubmit={handleSubmit} className="space-y-6">
+          {/* Formsubmit – versendet die Daten direkt an die hinterlegte E‑Mail */}
+          <form
+            action="https://formsubmit.co/info@smartersystem.de"
+            method="POST"
+            className="space-y-6"
+          >
+            {/* Anti‑Spam & Optionen */}
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="text" name="_honey" style={{ display: 'none' }} />
+            {/* Optional: eigene Betreffzeile für die Mail */}
+            <input type="hidden" name="_subject" value="Neue Kontaktanfrage über das Formular" />
+
             {/* Company */}
             <div>
               <input
@@ -88,7 +91,7 @@ const Contact: React.FC = () => {
               <input
                 type="email"
                 name="email"
-                placeholder="E-Mail-Adresse"
+                placeholder="E‑Mail‑Adresse"
                 value={formData.email}
                 onChange={handleInputChange}
                 required
@@ -152,7 +155,7 @@ const Contact: React.FC = () => {
                   className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                 />
                 <label htmlFor="privacy" className="text-sm text-gray-700">
-                  Ich habe die Datenschutzerklärung gelesen bin damit einverstanden.
+                  Ich habe die Datenschutzerklärung gelesen und bin damit einverstanden.
                 </label>
               </div>
 
@@ -192,7 +195,7 @@ const Contact: React.FC = () => {
             <div className="bg-white p-8 rounded-xl shadow-lg">
               <Phone className="h-12 w-12 text-blue-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Telefon</h3>
-              <p className="text-gray-600 mb-2">Montag bis Freitag 9-18 Uhr</p>
+              <p className="text-gray-600 mb-2">Montag bis Freitag 9‑18 Uhr</p>
               <a href="tel:+4917820877960" className="text-blue-600 hover:text-blue-700 font-medium">
                 +49 178 2087960
               </a>
@@ -200,7 +203,7 @@ const Contact: React.FC = () => {
 
             <div className="bg-white p-8 rounded-xl shadow-lg">
               <Mail className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">E-Mail</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">E‑Mail</h3>
               <p className="text-gray-600 mb-2">Schreiben Sie uns</p>
               <a href="mailto:info@smartersystem.de" className="text-blue-600 hover:text-blue-700 font-medium">
                 info@smartersystem.de
@@ -211,7 +214,8 @@ const Contact: React.FC = () => {
               <Clock className="h-12 w-12 text-blue-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Öffnungszeiten</h3>
               <p className="text-gray-600">
-                Mo-Fr: 9:00 - 18:00 Uhr<br />
+                Mo‑Fr: 9:00 - 18:00 Uhr
+                <br />
                 Sa: Nach Vereinbarung
               </p>
             </div>
