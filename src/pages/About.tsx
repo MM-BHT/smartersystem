@@ -50,7 +50,7 @@ const About: React.FC = () => {
             </div>
             <div className="lg:order-first">
               <img 
-                src="https://images.pexels.com/photos/2800832/pexels-photo-2800832.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                src="/images/about_1.png"
                 alt="Unser Team bei der Arbeit"
                 className="rounded-xl shadow-lg w-full"
               />

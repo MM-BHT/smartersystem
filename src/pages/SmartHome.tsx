@@ -30,6 +30,89 @@ const SmartHome: React.FC = () => {
         </div>
       </section>
 
+            {/* Smart Home Lösungen */}
+<section className="py-16">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl font-bold text-gray-900 mb-4">
+        Smarte Lösungen für Ihr Zuhause
+      </h2>
+    </div>
+
+    {/* Abschnitt 1: Allgemeine Smart-Home-Leistungen */}
+    <div className="lg:flex lg:items-center lg:gap-12 mb-16">
+      <img
+        src="/images/smart_1.png"
+        alt="Smart Home Steuerung"
+        className="rounded-xl shadow-lg w-full lg:w-1/2 mb-8 lg:mb-0"
+      />
+      <div className="lg:w-1/2">
+        <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+          Smarte Steuerung für Ihr Zuhause
+        </h3>
+        <ul className="space-y-3 text-gray-600">
+          <li className="flex items-start space-x-2">
+            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+            <span>Zentralisierte Steuerung von Licht, Heizung, Rollläden und Sicherheitssystemen</span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+            <span>Kompatibel mit gängigen Sprachassistenten wie Alexa, Google Assistant und Apple HomeKit</span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+            <span>Individuelle Szenarien für Alltag, Urlaub, Nachtmodus oder Energieeinsparung</span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+            <span>Automatisierte Abläufe auf Basis von Sensorik, Zeitplänen oder Nutzerverhalten</span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+            <span>Benutzerfreundliche App-Steuerung für Mobilgeräte und Tablets</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    {/* Abschnitt 2: PV- und Speicherintegration ins Smart Home */}
+    <div className="lg:flex lg:items-center lg:gap-12 lg:flex-row-reverse">
+      <img
+        src="/images/smart_2.png"
+        alt="PV Speicher Integration Smart Home"
+        className="rounded-xl shadow-lg w-full lg:w-1/2 mb-8 lg:mb-0"
+      />
+      <div className="lg:w-1/2">
+        <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+          Energiemanagement mit PV- und Speicheranbindung
+        </h3>
+        <ul className="space-y-3 text-gray-600">
+          <li className="flex items-start space-x-2">
+            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+            <span>Intelligente Steuerung von Energieflüssen zwischen PV-Anlage, Speicher und Verbrauchern</span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+            <span>Priorisierung von Eigenverbrauch für maximale Energieeffizienz</span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+            <span>Automatische Geräteaktivierung bei PV-Überschuss (z. B. Waschmaschine, Wallbox)</span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+            <span>Echtzeit-Überwachung von Erzeugung, Verbrauch und Ladezustand</span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+            <span>Optimierung über lernende Algorithmen und dynamische Stromtarife</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
       {/* Smart Home Vorteile */}
       <section className="py-16 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -94,7 +177,7 @@ const SmartHome: React.FC = () => {
           </div>
         </div>
       </section>
-      
+
       
       {/* CTA Section */}
       <section className="py-16 bg-blue-600 text-white">

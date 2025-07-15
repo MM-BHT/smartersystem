@@ -30,9 +30,97 @@ const PVSpeicher: React.FC = () => {
         </div>
       </section>
 
+      {/* Technical Details */}
+<section className="py-16">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl font-bold text-gray-900 mb-4">
+        Unsere Leistungen im Detail
+      </h2>
+    </div>
+
+    {/* Erster Abschnitt: Bild links, Text rechts */}
+    <div className="lg:flex lg:items-center lg:gap-12 mb-16">
+      <img 
+        src="/images/home_1.png"
+        alt="Photovoltaik Installation"
+        className="rounded-xl shadow-lg w-full lg:w-1/2 mb-8 lg:mb-0"
+      />
+      <div className="lg:w-1/2">
+        <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+          Komplettservice Photovoltaik
+        </h3>
+        <ul className="space-y-3 text-gray-600">
+          <li className="flex items-start space-x-2">
+            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+            <span>Kostenlose Erstberatung und Potentialanalyse vor Ort</span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+            <span>3D-Planung und Ertragsberechnung für optimale Auslegung</span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+            <span>Komplette Anmeldung beim Netzbetreiber und der Bundesnetzagentur</span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+            <span>Installation durch zertifizierte Elektrofachkräfte</span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+            <span>Inbetriebnahme und Einweisung in das System</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    {/* Zweiter Abschnitt: Text links, Bild rechts */}
+    <div className="lg:flex lg:items-center lg:gap-12 lg:flex-row-reverse">
+      <img 
+        src="/images/pv_2.png"
+        alt="Speicher Installation"
+        className="rounded-xl shadow-lg w-full lg:w-1/2 mb-8 lg:mb-0"
+      />
+      <div className="lg:w-1/2">
+        <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+          Intelligente Speicherlösungen
+        </h3>
+        <ul className="space-y-3 text-gray-600">
+          <li className="flex items-start space-x-2">
+            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+            <span>Hochleistungs-Lithium-Batterien mit 10+ Jahren Garantie</span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+            <span>Modulares System - erweiterbar je nach Bedarf</span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+            <span>Notstromfunktion für kritische Verbraucher</span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+            <span>App-Steuerung für Monitoring und Optimierung</span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+            <span>Automatische Firmware-Updates und Remote-Wartung</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
       {/* Benefits Section */}
       <section className="py-16 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">PV Vorteile im Überblick</h2>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-blue-700 p-6 rounded-xl">
               <Sun className="h-12 w-12 mb-4" />
@@ -82,85 +170,7 @@ const PVSpeicher: React.FC = () => {
         </div>
       </section>
 
-      {/* Technical Details */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Unsere Leistungen im Detail
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <img 
-                src="https://images.pexels.com/photos/2800832/pexels-photo-2800832.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
-                alt="Photovoltaik Installation"
-                className="rounded-xl shadow-lg w-full mb-6"
-              />
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                Komplettservice Photovoltaik
-              </h3>
-              <ul className="space-y-3 text-gray-600">
-                <li className="flex items-start space-x-2">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span>Kostenlose Erstberatung und Potentialanalyse vor Ort</span>
-                </li>
-                <li className="flex items-start space-x-2">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span>3D-Planung und Ertragsberechnung für optimale Auslegung</span>
-                </li>
-                <li className="flex items-start space-x-2">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span>Komplette Anmeldung beim Netzbetreiber und der Bundesnetzagentur</span>
-                </li>
-                <li className="flex items-start space-x-2">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span>Installation durch zertifizierte Elektrofachkräfte</span>
-                </li>
-                <li className="flex items-start space-x-2">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span>Inbetriebnahme und Einweisung in das System</span>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <img 
-                src="https://images.pexels.com/photos/2800832/pexels-photo-2800832.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
-                alt="Speicher Installation"
-                className="rounded-xl shadow-lg w-full mb-6"
-              />
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                Intelligente Speicherlösungen
-              </h3>
-              <ul className="space-y-3 text-gray-600">
-                <li className="flex items-start space-x-2">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span>Hochleistungs-Lithium-Batterien mit 10+ Jahren Garantie</span>
-                </li>
-                <li className="flex items-start space-x-2">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span>Modulares System - erweiterbar je nach Bedarf</span>
-                </li>
-                <li className="flex items-start space-x-2">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span>Notstromfunktion für kritische Verbraucher</span>
-                </li>
-                <li className="flex items-start space-x-2">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span>App-Steuerung für Monitoring und Optimierung</span>
-                </li>
-                <li className="flex items-start space-x-2">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span>Automatische Firmware-Updates und Remote-Wartung</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      
       {/* CTA Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

@@ -8,11 +8,13 @@ import SmartHome from './pages/SmartHome';
 import Contact from './pages/Contact';
 import Datenschutz from './pages/Datenschutz';
 import Impressum from './pages/Impressum';
+import ScrollToTop from "./components/ScrollToTop"; 
 
 function App() {
   return (
     <Router>
       <Layout>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/uber-uns" element={<About />} />
