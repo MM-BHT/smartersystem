@@ -15,7 +15,7 @@ const About: React.FC = () => {
       >
         <div className="text-center max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
-            Über uns & Partner
+            Über uns
           </h1>
           <p className="text-xl opacity-90">
             Ihr vertrauensvoller Partner für nachhaltige Energielösungen

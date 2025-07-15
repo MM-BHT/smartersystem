@@ -47,7 +47,7 @@ const Home: React.FC = () => {
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="mb-6">
                 <img 
-                  src="https://images.pexels.com/photos/2800832/pexels-photo-2800832.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" 
+                  src="/images/Home_1.png" 
                   alt="PV und Speicher"
                   className="w-full h-48 object-cover rounded-lg"
                 />
@@ -64,7 +64,7 @@ const Home: React.FC = () => {
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="mb-6">
                 <img 
-                  src="https://images.pexels.com/photos/1693946/pexels-photo-1693946.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" 
+                  src="/images/Home_2.png" 
                   alt="Smart Home"
                   className="w-full h-48 object-cover rounded-lg"
                 />
