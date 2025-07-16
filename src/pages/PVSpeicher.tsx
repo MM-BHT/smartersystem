@@ -42,7 +42,7 @@ const PVSpeicher: React.FC = () => {
     {/* Erster Abschnitt: Bild links, Text rechts */}
     <div className="lg:flex lg:items-center lg:gap-12 mb-16">
       <img 
-        src="/images/home_1.png"
+        src="/images/home_3.png"
         alt="Photovoltaik Installation"
         className="rounded-xl shadow-lg w-full lg:w-1/2 mb-8 lg:mb-0"
       />
