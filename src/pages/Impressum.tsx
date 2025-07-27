@@ -39,7 +39,7 @@ const Impressum: React.FC = () => {
 
               <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">Kontakt</h3>
               <p className="mb-6">
-                <strong>Telefon:</strong> +49 178 2087960<br />
+                <strong>Telefon:</strong> +49 155 063 989 382<br />
                 <strong>E-Mail:</strong> info@smartersystem.de
               </p>
 
