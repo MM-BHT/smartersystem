@@ -132,10 +132,10 @@ const Home: React.FC = () => {
               Schreiben Sie uns bei WhatsApp:
             </p>
             <a 
-              href="tel:+4917820877960"
+              href="tel:+49 155 063 989 382"
               className="inline-flex items-center space-x-2 bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
             >
-              <span>📞 +49 178 2087960</span>
+              <span>📞 +49 155 063 989 382</span>
             </a>
           </div>
         </div>
