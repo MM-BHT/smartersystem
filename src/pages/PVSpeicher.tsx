@@ -78,7 +78,7 @@ const PVSpeicher: React.FC = () => {
     {/* Zweiter Abschnitt: Text links, Bild rechts */}
     <div className="lg:flex lg:items-center lg:gap-12 lg:flex-row-reverse">
       <img 
-        src="/images/pv_2.png"
+        src="/images/pv_3.png"
         alt="Speicher Installation"
         className="rounded-xl shadow-lg w-full lg:w-1/2 mb-8 lg:mb-0"
       />

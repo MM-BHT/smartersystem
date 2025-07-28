@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Sun, Battery, Home as HomeIcon, Zap, Shield, Settings } from 'lucide-react';
+import { ArrowRight, Sun, Battery, Home as HomeIcon, Zap, Shield, Settings, PhoneCallIcon} from 'lucide-react';
 
 const Home: React.FC = () => {
   return (
@@ -82,47 +82,6 @@ const Home: React.FC = () => {
       </section>
 
       {/* Service Selection */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-blue-600 mb-12">
-            Zu welchem Thema möchten Sie Ihre Anfrage stellen?
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Link 
-              to="/pv-speicher"
-              className="group bg-white border-2 border-blue-200 p-8 rounded-xl hover:border-blue-400 hover:shadow-lg transition-all transform hover:scale-105"
-            >
-              <div className="text-blue-600 mb-4">
-                <Sun className="h-16 w-16 mx-auto" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">PV und Speicher</h3>
-            </Link>
-
-            <Link 
-              to="/smart-home"
-              className="group bg-white border-2 border-blue-200 p-8 rounded-xl hover:border-blue-400 hover:shadow-lg transition-all transform hover:scale-105"
-            >
-              <div className="text-blue-600 mb-4">
-                <HomeIcon className="h-16 w-16 mx-auto" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Smart Home</h3>
-            </Link>
-
-            <Link 
-              to="/kontakt"
-              className="group bg-white border-2 border-blue-200 p-8 rounded-xl hover:border-blue-400 hover:shadow-lg transition-all transform hover:scale-105"
-            >
-              <div className="text-blue-600 mb-4">
-                <Zap className="h-16 w-16 mx-auto" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">PV + Smart Home</h3>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
       <section className="py-16 bg-blue-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-white text-blue-600 p-8 rounded-xl">
@@ -135,7 +94,8 @@ const Home: React.FC = () => {
               href="tel:+49 155 063 989 382"
               className="inline-flex items-center space-x-2 bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
             >
-              <span>📞 +49 155 063 989 382</span>
+              <PhoneCallIcon className="w-5 h-5 text-green-400" />
+              <span>+49 155 063 989 382</span>
             </a>
           </div>
         </div>

@@ -196,8 +196,8 @@ const Contact: React.FC = () => {
               <Phone className="h-12 w-12 text-blue-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Telefon</h3>
               <p className="text-gray-600 mb-2">Montag bis Freitag 9‑18 Uhr</p>
-              <a href="tel:+4917820877960" className="text-blue-600 hover:text-blue-700 font-medium">
-                +49 178 2087960
+              <a href="tel:+49155063989382" className="text-blue-600 hover:text-blue-700 font-medium">
+                +49 155 063 989 382
               </a>
             </div>
 

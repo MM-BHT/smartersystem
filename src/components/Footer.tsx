@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link to="/uber-uns" className="text-gray-300 hover:text-white transition-colors">
-                  Referenzen
+                  Über Uns
                 </Link>
               </li>
             </ul>
@@ -42,11 +42,6 @@ const Footer: React.FC = () => {
                 <Link to="/impressum" className="text-gray-300 hover:text-white transition-colors">
                   Impressum
                 </Link>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  AGB
-                </a>
               </li>
             </ul>
           </div>
