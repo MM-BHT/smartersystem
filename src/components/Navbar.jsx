@@ -22,7 +22,7 @@ export default function Navbar() {
 
       {/* Mobile hamburger */}
       <button
-        className="md:hidden p-4 relative w-10 h-10 z-50 overflow-visible"
+        className="md:hidden p-8 relative w-10 h-10 z-50 overflow-visible"
         onClick={() => setOpen(!open)}
         aria-label="Menü"
       >
