@@ -65,7 +65,7 @@ function FaqItem({ q, a }) {
 const housePoints = [
   { label: 'Beleuchtung', icon: '💡', tip: 'Automatisches Licht nach Tageszeit & Bewegung', style: { top: '28%', left: '22%' } },
   { label: 'Türschloss', icon: '🔑', tip: 'Smarte Türschlösser – Zutritt per App, Code oder NFC', style: { top: '62%', left: '48%' } },
-  { label: 'Kamera', icon: '📷', tip: 'HD-Überwachungskameras mit Live-Feed auf Ihr Smartphone', style: { top: '18%', left: '68%' } },
+  { label: 'Kamera', icon: '📷', tip: 'HD-Überwachungskameras mit Live-Feed auf Ihr Smartphone', style: { top: '23%', left: '68%' } },
   { label: 'Heizung', icon: '🌡️', tip: 'Intelligente Raumtemperatur spart bis zu 30 % Energie', style: { top: '48%', left: '78%' } },
   { label: 'Rollos', icon: '🏠', tip: 'Automatische Beschattung nach Sonnenstand & Wetter', style: { top: '38%', left: '52%' } },
   { label: 'Entertainment', icon: '🎵', tip: 'Multiroom-Audio und vernetzte Unterhaltung durch das ganze Haus', style: { top: '68%', left: '28%' } },
@@ -90,16 +90,6 @@ export default function Home() {
           <p className="text-white/80 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
             Wir verwandeln Ihr Zuhause in ein intelligentes Smart Home – zur Miete, zur Pflege oder einfach für mehr Komfort. Kompetent. Sauber. Ohne Bohren.
           </p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <Link to="/kontakt"
-              className="bg-white text-[#1A56E8] px-8 py-3.5 rounded-lg font-bold text-sm shadow-lg hover:bg-[#F0F4FF] transition-colors no-underline">
-              Kostenloses Erstgespräch →
-            </Link>
-            <a href="#leistungen"
-              className="bg-transparent border-2 border-white/50 text-white px-8 py-3.5 rounded-lg font-semibold text-sm hover:border-white hover:bg-white/10 transition-all no-underline">
-              Leistungen ansehen
-            </a>
-          </div>
         </div>
       </section>
 
