@@ -155,7 +155,7 @@ export default function Kontakt() {
               </div>
 
               {/* Privacy */}
-              <label className="flex items-start gap-2.5 mb-3 cursor-pointer text-sm text-gray-500 leading-relaxed">
+              <label className="flex items-start mb-3 cursor-pointer text-sm text-gray-500 leading-relaxed">
               <input
                 type="checkbox"
                 checked={privacy}
@@ -163,7 +163,7 @@ export default function Kontakt() {
                 className="w-4 h-4 flex-shrink-0 mt-0.5 accent-[#1A56E8]"
                 required
               />
-              <span>
+              <span className="ml-2">
                 Ich habe die{" "}
                 <Link to="/datenschutz" className="text-[#1A56E8] underline">
                   Datenschutzerklärung
