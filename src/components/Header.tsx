@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
-const Logo = () => (
+const LogoSVG = () => (
   <svg width="26" height="26" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M2 14L14 4L26 14" stroke="#1A56E8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     <path d="M5 14v11h18V14" stroke="#1A56E8" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ const Logo = () => (
   </svg>
 );
 
-const navItems = [
+const navLinks = [
   { href: '#leistungen', label: 'Leistungen' },
   { href: '#pv-speicher', label: 'PV & Speicher' },
   { href: '#smart-home', label: 'Smart Home' },
@@ -21,129 +21,94 @@ const navItems = [
 ];
 
 const Header: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const isHome = location.pathname === '/';
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
-
-  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    if (isHome) {
-      e.preventDefault();
-      const el = document.querySelector(href);
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsMenuOpen(false);
+  const scrollTo = (hash: string) => {
+    setMenuOpen(false);
+    if (!isHome) { window.location.href = '/' + hash; return; }
+    const el = document.querySelector(hash);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <header style={{
-      position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
-      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-      padding: '0.9rem 5%',
-      background: '#fff',
-      borderBottom: '1px solid #e5e7eb',
-      boxShadow: scrolled ? '0 2px 16px rgba(0,0,0,0.08)' : '0 1px 8px rgba(0,0,0,0.06)',
-      transition: 'box-shadow 0.3s',
-    }}>
+    <nav className="site-nav">
       {/* Logo */}
       {isHome ? (
-        <a href="#hero" onClick={(e) => handleAnchorClick(e, '#hero')} style={{
-          display: 'flex', alignItems: 'center', gap: '0.5rem',
-          fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: '1.1rem',
-          color: '#1A56E8', textDecoration: 'none',
-        }}>
-          <Logo />
-          Smarter System
+        <a
+          href="#hero"
+          onClick={e => { e.preventDefault(); scrollTo('#hero'); }}
+          style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontFamily: "'Inter',sans-serif", fontWeight: 700, fontSize: '1.1rem', color: '#1A56E8', textDecoration: 'none' }}
+        >
+          <LogoSVG /> Smarter System
         </a>
       ) : (
-        <Link to="/" style={{
-          display: 'flex', alignItems: 'center', gap: '0.5rem',
-          fontFamily: "'Inter', sans-serif", fontWeight: 700, fontSize: '1.1rem',
-          color: '#1A56E8', textDecoration: 'none',
-        }}>
-          <Logo />
-          Smarter System
+        <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontFamily: "'Inter',sans-serif", fontWeight: 700, fontSize: '1.1rem', color: '#1A56E8', textDecoration: 'none' }}>
+          <LogoSVG /> Smarter System
         </Link>
       )}
 
-      {/* Desktop Nav */}
-      <nav style={{ display: 'flex', gap: '2rem', listStyle: 'none' }} className="desktop-nav">
-        {isHome ? navItems.map(item => (
-          <a key={item.href} href={item.href}
-            onClick={(e) => handleAnchorClick(e, item.href)}
-            style={{ fontSize: '0.9rem', fontWeight: 500, color: '#111827', textDecoration: 'none', transition: 'color 0.2s' }}
-            onMouseEnter={e => (e.currentTarget.style.color = '#1A56E8')}
-            onMouseLeave={e => (e.currentTarget.style.color = '#111827')}
-          >{item.label}</a>
-        )) : (
-          <Link to="/" style={{ fontSize: '0.9rem', fontWeight: 500, color: '#111827', textDecoration: 'none' }}>← Startseite</Link>
-        )}
-      </nav>
+      {/* Desktop nav links */}
+      <ul>
+        {navLinks.map(link => (
+          <li key={link.href}>
+            <a href={link.href} onClick={e => { e.preventDefault(); scrollTo(link.href); }}>
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
 
-      {/* CTA Button */}
-      {isHome ? (
-        <a href="#kontakt" onClick={(e) => handleAnchorClick(e, '#kontakt')}
-          style={{
-            background: '#1A56E8', color: '#fff', padding: '0.6rem 1.4rem',
-            borderRadius: '6px', fontWeight: 600, fontSize: '0.9rem',
-            textDecoration: 'none', transition: 'background 0.2s', display: 'inline-block',
-          }}
-          className="desktop-cta"
-          onMouseEnter={e => (e.currentTarget.style.background = '#0F3BAA')}
-          onMouseLeave={e => (e.currentTarget.style.background = '#1A56E8')}
-        >Kontakt & Angebot</a>
-      ) : (
-        <Link to="/#kontakt" style={{
-          background: '#1A56E8', color: '#fff', padding: '0.6rem 1.4rem',
-          borderRadius: '6px', fontWeight: 600, fontSize: '0.9rem',
-          textDecoration: 'none', display: 'inline-block',
-        }}
-          className="desktop-cta"
-        >Kontakt & Angebot</Link>
-      )}
-
-      {/* Mobile menu button */}
-      <button
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="mobile-menu-btn"
-        style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '0.25rem', display: 'none' }}
+      {/* CTA Button desktop */}
+      <a
+        href="#kontakt"
+        className="btn-primary nav-cta-desktop"
+        onClick={e => { e.preventDefault(); scrollTo('#kontakt'); }}
       >
-        {isMenuOpen ? <X size={24} color="#111827" /> : <Menu size={24} color="#111827" />}
+        Kontakt & Angebot
+      </a>
+
+      {/* Mobile burger */}
+      <button
+        className="nav-mobile-btn"
+        onClick={() => setMenuOpen(v => !v)}
+        style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '0.25rem' }}
+      >
+        {menuOpen ? <X size={24} color="#111827" /> : <Menu size={24} color="#111827" />}
       </button>
 
-      {/* Mobile Dropdown */}
-      {isMenuOpen && (
+      {/* Mobile dropdown */}
+      {menuOpen && (
         <div style={{
           position: 'absolute', top: '100%', left: 0, right: 0,
           background: '#fff', borderBottom: '1px solid #e5e7eb',
-          padding: '1rem 5%', display: 'flex', flexDirection: 'column', gap: '1rem',
+          padding: '1.2rem 5%', display: 'flex', flexDirection: 'column', gap: '1rem',
           boxShadow: '0 8px 24px rgba(0,0,0,0.1)',
         }}>
-          {isHome ? navItems.map(item => (
-            <a key={item.href} href={item.href}
-              onClick={(e) => handleAnchorClick(e, item.href)}
+          {navLinks.map(link => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={e => { e.preventDefault(); scrollTo(link.href); }}
               style={{ fontSize: '0.95rem', fontWeight: 500, color: '#111827', textDecoration: 'none' }}
-            >{item.label}</a>
-          )) : (
-            <Link to="/" onClick={() => setIsMenuOpen(false)} style={{ fontSize: '0.95rem', fontWeight: 500, color: '#111827', textDecoration: 'none' }}>← Startseite</Link>
-          )}
-          {isHome && (
-            <a href="#kontakt" onClick={(e) => handleAnchorClick(e, '#kontakt')}
-              style={{
-                background: '#1A56E8', color: '#fff', padding: '0.7rem 1.4rem',
-                borderRadius: '6px', fontWeight: 600, textDecoration: 'none', textAlign: 'center',
-              }}
-            >Kontakt & Angebot</a>
-          )}
+            >
+              {link.label}
+            </a>
+          ))}
+          <a
+            href="#kontakt"
+            className="btn-primary"
+            style={{ textAlign: 'center' }}
+            onClick={e => { e.preventDefault(); scrollTo('#kontakt'); }}
+          >
+            Kontakt & Angebot
+          </a>
+          <Link to="/datenschutz" onClick={() => setMenuOpen(false)} style={{ fontSize: '0.85rem', color: '#6B7280', textDecoration: 'none' }}>Datenschutz</Link>
+          <Link to="/impressum" onClick={() => setMenuOpen(false)} style={{ fontSize: '0.85rem', color: '#6B7280', textDecoration: 'none' }}>Impressum</Link>
         </div>
       )}
-    </header>
+    </nav>
   );
 };
 
