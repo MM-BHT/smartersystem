@@ -67,8 +67,8 @@ const housePoints = [
   { label: 'Türschloss', icon: '🔑', tip: 'Smarte Türschlösser – Zutritt per App, Code oder NFC', style: { top: '62%', left: '48%' } },
   { label: 'Kamera', icon: '📷', tip: 'HD-Überwachungskameras mit Live-Feed auf Ihr Smartphone', style: { top: '23%', left: '68%' } },
   { label: 'Heizung', icon: '🌡️', tip: 'Intelligente Raumtemperatur spart bis zu 30 % Energie', style: { top: '48%', left: '78%' } },
-  { label: 'Rollos', icon: '🏠', tip: 'Automatische Beschattung nach Sonnenstand & Wetter', style: { top: '38%', left: '52%' } },
-  { label: 'Entertainment', icon: '🎵', tip: 'Multiroom-Audio und vernetzte Unterhaltung durch das ganze Haus', style: { top: '68%', left: '28%' } },
+  { label: 'Rollos', icon: '🏠', tip: 'Automatische Beschattung nach Sonnenstand & Wetter', style: { top: '45%', left: '58%' } },
+  { label: 'Entertainment', icon: '🎵', tip: 'Multiroom-Audio und vernetzte Unterhaltung durch das ganze Haus', style: { top: '60%', left: '35%' } },
 ]
 
 export default function Home() {
