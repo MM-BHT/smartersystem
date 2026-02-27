@@ -249,13 +249,24 @@ export default function Home() {
               className="bg-white text-[#1A56E8] font-bold px-8 py-3.5 rounded-xl hover:bg-[#F0F4FF] transition-colors no-underline text-sm">
               Kontaktformular öffnen
             </Link>
-            <a href="https://wa.me/4915563989382"
-              className="flex items-center gap-3 bg-white/10 border border-white/30 px-6 py-3 rounded-xl hover:bg-white/20 transition-colors no-underline">
-              <div className="text-2xl">📱</div>
-              <div className="text-left">
-                <div className="text-white/60 text-xs">Anrufen oder WhatsApp</div>
-                <div className="text-white font-semibold text-sm">+49 155 63 989 382</div>
-              </div>
+            {/* Anrufen */}
+            <a
+              href="tel:+4915563989382"
+              className="flex items-center justify-center gap-3 bg-white text-gray-900 px-6 py-3 rounded-xl font-semibold text-sm hover:bg-gray-200 transition-colors"
+            >
+              <span className="text-lg">📞</span>
+              Anrufen
+            </a>
+
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/4915563989382"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-3 bg-green-500 text-white px-6 py-3 rounded-xl font-semibold text-sm hover:bg-green-600 transition-colors"
+            >
+              <span className="text-lg">💬</span>
+              WhatsApp
             </a>
           </div>
         </div>
