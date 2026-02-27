@@ -163,7 +163,7 @@ export default function Kontakt() {
                 className="w-4 h-4 flex-shrink-0 mt-0.5 accent-[#1A56E8]"
                 required
               />
-              <span className="ml-2 whitespace-normal">
+              <span className="ml-2 min-w-0">
                 Ich habe die{" "}
                 <Link to="/datenschutz" className="text-[#1A56E8] underline">
                   Datenschutzerklärung
