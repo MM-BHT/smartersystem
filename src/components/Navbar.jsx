@@ -21,7 +21,7 @@ export default function Navbar() {
       <Link to="/kontakt" className="hidden md:inline-block btn-primary">Kontakt &amp; Angebot</Link>
 
       {/* Mobile hamburger */}
-      <button className="md:hidden p-4 relative w-10 h-10 overflow-visible" onClick={() => setOpen(!open)} aria-label="Menü">
+      <button className="md:hidden p-4 relative w-10 h-10 z-50 overflow-visible" onClick={() => setOpen(!open)} aria-label="Menü">
       <div className={`absolute left-2 top-3 w-6 h-0.5 bg-gray-800 transition-all duration-300 ${open ? "rotate-45 top-5" : ""}`}></div>
       <div className={`absolute left-2 top-5 w-6 h-0.5 bg-gray-800 transition-all duration-300 ${open ? "opacity-0" : ""}`}></div>
       <div className={`absolute left-2 top-7 w-6 h-0.5 bg-gray-800 transition-all duration-300 ${open ? "-rotate-45 top-5" : ""}`}></div>
