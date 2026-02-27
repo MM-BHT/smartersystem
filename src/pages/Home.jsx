@@ -251,7 +251,7 @@ export default function Home() {
             </Link>
             <a href="https://wa.me/4915563989382"
               className="flex items-center gap-3 bg-white/10 border border-white/30 px-6 py-3 rounded-xl hover:bg-white/20 transition-colors no-underline">
-              <div className="text-2xl">📞</div>
+              <div className="text-2xl">📱</div>
               <div className="text-left">
                 <div className="text-white/60 text-xs">Anrufen oder WhatsApp</div>
                 <div className="text-white font-semibold text-sm">+49 155 63 989 382</div>

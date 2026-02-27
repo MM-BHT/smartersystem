@@ -71,7 +71,7 @@ export default function Kontakt() {
             <p className="text-gray-500 leading-relaxed mb-8">Ob per Telefon, WhatsApp oder Formular – wir sind für Sie da und melden uns schnell zurück.</p>
             
             {[
-              { icon: '📞', label: 'Telefon & WhatsApp', value: '+49 155 063 989 382', href: 'tel:+4915563989382' },
+              { icon: '📱', label: 'Telefon & WhatsApp', value: '+49 155 063 989 382', href: 'tel:+4915563989382' },
               { icon: '✉️', label: 'E-Mail', value: 'info@smartersystem.de', href: 'mailto:info@smartersystem.de' },
               { icon: '🕐', label: 'Erreichbarkeit', value: 'Montag bis Freitag 9–18 Uhr', href: null },
             ].map((card, i) => (
@@ -92,7 +92,7 @@ export default function Kontakt() {
 
             <div className="rounded-2xl p-4 flex items-center gap-4 mt-4"
               style={{ background: 'linear-gradient(135deg, #0B1B4D, #1A56E8)' }}>
-              <div className="text-3xl">💬</div>
+              <div className="text-3xl">🗱</div>
               <div>
                 <span className="block text-[#38BDF8] text-[0.7rem] font-bold uppercase tracking-widest">Schnellste Option</span>
                 <p className="text-white font-medium text-sm m-0">WhatsApp-Nachricht – oft in Minuten beantwortet</p>
