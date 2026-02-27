@@ -10,7 +10,7 @@ const Header: React.FC = () => {
     { path: '/uber-uns', label: 'Über Uns' },
     { path: '/pv-speicher', label: 'PV und Speicher' },
     { path: '/smart-home', label: 'Smart Home' },
-    { path: '/kontakt', label: 'Kontakt und Angebot' },
+    { path: '/kontakt', label: 'Kontakt und Angbot' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
