@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[5%] py-4 bg-white border-b border-gray-200 shadow-sm">
       <Link to="/" className="flex items-center gap-2 font-bold text-[#1A56E8] text-lg no-underline">
-        <img src="/logo.svg" alt="Smarter System Logo" className="w-7 h-7" />
+        <img src="/logo.png" alt="Smarter System Logo" className="w-7 h-7" />
         Smarter System
       </Link>
 
