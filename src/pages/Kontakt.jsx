@@ -156,10 +156,21 @@ export default function Kontakt() {
 
               {/* Privacy */}
               <label className="flex items-start gap-2.5 mb-3 cursor-pointer text-sm text-gray-500 leading-relaxed">
-                <input type="checkbox" checked={privacy} onChange={e => setPrivacy(e.target.checked)}
-                  className="w-4 h-4 flex-shrink-0 mt-0.5 accent-[#1A56E8]" required />
-                Ich habe die <Link to="/datenschutz" className="text-[#1A56E8] underline">Datenschutzerklärung</Link> gelesen und bin damit einverstanden. *
-              </label>
+              <input
+                type="checkbox"
+                checked={privacy}
+                onChange={e => setPrivacy(e.target.checked)}
+                className="w-4 h-4 flex-shrink-0 mt-0.5 accent-[#1A56E8]"
+                required
+              />
+              <span>
+                Ich habe die{" "}
+                <Link to="/datenschutz" className="text-[#1A56E8] underline">
+                  Datenschutzerklärung
+                </Link>{" "}
+                gelesen und bin damit einverstanden. *
+              </span>
+            </label>
 
               {/* Newsletter */}
               <label className="flex items-start gap-2.5 mb-6 cursor-pointer text-sm text-gray-500 leading-relaxed">

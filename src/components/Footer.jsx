@@ -31,7 +31,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10 pt-5 text-center text-xs text-white/40 max-w-6xl mx-auto">
-        © Smarter System 2025 – Alle Rechte vorbehalten ·{' '}
+        © Smarter System 2024 – Alle Rechte vorbehalten ·{' '}
         <Link to="/datenschutz" className="text-white/45 underline">Datenschutz</Link> ·{' '}
         <Link to="/impressum" className="text-white/45 underline">Impressum</Link>
       </div>
