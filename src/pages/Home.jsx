@@ -75,7 +75,7 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="min-h-[91vh] flex items-center justify-center relative overflow-hidden text-center px-[5%] py-28"
+      <section id="start" className="min-h-[91vh] flex items-center justify-center relative overflow-hidden text-center px-[5%] py-28"
         style={{ background: 'linear-gradient(160deg, #1246C8 0%, #1A56E8 40%, #2a8fd4 100%)' }}>
         <div className="absolute inset-0 opacity-10"
           style={{ backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.3) 1px, transparent 1px)', backgroundSize: '40px 40px' }}

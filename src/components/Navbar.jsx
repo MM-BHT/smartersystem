@@ -12,7 +12,7 @@ export default function Navbar() {
 
       {/* Desktop nav */}
       <ul className="hidden md:flex gap-6 list-none">
-        <li><NavLink to="/" end className="text-sm font-medium text-gray-800 hover:text-[#1A56E8] transition-colors no-underline">Startseite</NavLink></li>
+        <li><NavLink to="/#start" end className="text-sm font-medium text-gray-800 hover:text-[#1A56E8] transition-colors no-underline">Startseite</NavLink></li>
         <li><a href="/#leistungen" className="text-sm font-medium text-gray-800 hover:text-[#1A56E8] transition-colors no-underline">Leistungen</a></li>
         <li><a href="/#prozess" className="text-sm font-medium text-gray-800 hover:text-[#1A56E8] transition-colors no-underline">Prozess</a></li>
         <li><a href="/#faq" className="text-sm font-medium text-gray-800 hover:text-[#1A56E8] transition-colors no-underline">FAQ</a></li>
