@@ -6,13 +6,13 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[5%] py-2 bg-white border-b border-gray-200 shadow-sm">
-      <Link to="/#start" className="flex items-center gap-2 font-bold text-[#1A56E8] text-lg no-underline">
+      <a href="/#start" className="flex items-center gap-2 font-bold text-[#1A56E8] text-lg no-underline">
         <img src="/logo.png" alt="Logo" className="h-22 w-auto sm:h-24 md:h-66"/>
       </Link>
 
       {/* Desktop nav */}
       <ul className="hidden md:flex gap-6 list-none">
-        <li><NavLink to="/#start" end className="text-sm font-medium text-gray-800 hover:text-[#1A56E8] transition-colors no-underline">Startseite</NavLink></li>
+        <li><a href="/#start" end className="text-sm font-medium text-gray-800 hover:text-[#1A56E8] transition-colors no-underline">Startseite</NavLink></li>
         <li><a href="/#leistungen" className="text-sm font-medium text-gray-800 hover:text-[#1A56E8] transition-colors no-underline">Leistungen</a></li>
         <li><a href="/#prozess" className="text-sm font-medium text-gray-800 hover:text-[#1A56E8] transition-colors no-underline">Prozess</a></li>
         <li><a href="/#faq" className="text-sm font-medium text-gray-800 hover:text-[#1A56E8] transition-colors no-underline">FAQ</a></li>
