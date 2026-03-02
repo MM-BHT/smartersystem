@@ -2,12 +2,6 @@ import { Outlet } from 'react-router-dom'
 import Navbar from './Navbar'
 import Footer from './Footer'
 
-// Scroll to top on route change
-function ScrollToTop() {
-  // handled by useEffect in pages
-  return null
-}
-
 export default function Layout() {
   return (
     <div className="min-h-screen flex flex-col">
