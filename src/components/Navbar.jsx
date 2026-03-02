@@ -5,13 +5,13 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[5%] py-4 bg-white border-b border-gray-200 shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[5%] py-2 bg-white border-b border-gray-200 shadow-sm">
       <Link to="/" className="flex items-center gap-2 font-bold text-[#1A56E8] text-lg no-underline">
-        <img src="/logo.png" alt="Logo" className="h-24 w-auto sm:h-30 md:h-36"/>
+        <img src="/logo.png" alt="Logo" className="h-22 w-auto sm:h-24 md:h-66"/>
       </Link>
 
       {/* Desktop nav */}
-      <ul className="hidden md:flex gap-8 list-none">
+      <ul className="hidden md:flex gap-6 list-none">
         <li><NavLink to="/" end className="text-sm font-medium text-gray-800 hover:text-[#1A56E8] transition-colors no-underline">Startseite</NavLink></li>
         <li><a href="/#leistungen" className="text-sm font-medium text-gray-800 hover:text-[#1A56E8] transition-colors no-underline">Leistungen</a></li>
         <li><a href="/#prozess" className="text-sm font-medium text-gray-800 hover:text-[#1A56E8] transition-colors no-underline">Prozess</a></li>
@@ -22,7 +22,7 @@ export default function Navbar() {
 
       {/* Mobile hamburger */}
       <button
-        className="md:hidden p-8 relative w-10 h-10 z-50 overflow-visible"
+        className="md:hidden p-6 relative w-10 h-10 z-50 overflow-visible"
         onClick={() => setOpen(!open)}
         aria-label="Menü"
       >
