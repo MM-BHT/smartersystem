@@ -7,9 +7,9 @@ import emailjs from '@emailjs/browser'
 // Registrieren Sie sich kostenlos auf https://www.emailjs.com
 // und ersetzen Sie diese drei Werte mit Ihren eigenen Zugangsdaten:
 // =============================================================================
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID'   // z.B. 'service_abc123'
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID'  // z.B. 'template_xyz789'
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY'   // z.B. 'aBcDeFgHiJkLmNoP'
+const EMAILJS_SERVICE_ID  = 'smartersystemInfo-Mail'   // z.B. 'service_abc123'
+const EMAILJS_TEMPLATE_ID = 'template_2rz7uko'  // z.B. 'template_xyz789'
+const EMAILJS_PUBLIC_KEY  = '8WgXb3qGbtBtEZ3Ya'   // z.B. 'aBcDeFgHiJkLmNoP'
 // =============================================================================
 
 export default function Kontakt() {
