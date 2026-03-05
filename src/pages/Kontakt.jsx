@@ -1,12 +1,7 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import emailjs from '@emailjs/browser'
 
-// =============================================================================
-// EMAILJS KONFIGURATION
-// Registrieren Sie sich kostenlos auf https://www.emailjs.com
-// und ersetzen Sie diese drei Werte mit Ihren eigenen Zugangsdaten:
-// =============================================================================
 const EMAILJS_SERVICE_ID  = 'smartersystemInfo-Mail'   // z.B. 'service_abc123'
 const EMAILJS_TEMPLATE_ID = 'template_2rz7uko'  // z.B. 'template_xyz789'
 const EMAILJS_PUBLIC_KEY  = '8WgXb3qGbtBtEZ3Ya'   // z.B. 'aBcDeFgHiJkLmNoP'
@@ -17,6 +12,11 @@ export default function Kontakt() {
   const [status, setStatus] = useState('idle') // idle | loading | success | error
   const [privacy, setPrivacy] = useState(false)
   const [newsletter, setNewsletter] = useState(false)
+  useEffect(() => {
+    emailjs.init({
+      publicKey: EMAILJS_PUBLIC_KEY,
+    })
+  }, [])
 
   async function handleSubmit(e) {
     e.preventDefault()
