@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import emailjs from '@emailjs/browser'
 
-const EMAILJS_SERVICE_ID  = 'smartersystemInfo-Mail'   // z.B. 'service_abc123'
+const EMAILJS_SERVICE_ID  = 'service_x0wu46u'   // z.B. 'service_abc123'
 const EMAILJS_TEMPLATE_ID = 'template_2rz7uko'  // z.B. 'template_xyz789'
 const EMAILJS_PUBLIC_KEY  = '8WgXb3qGbtBtEZ3Ya'   // z.B. 'aBcDeFgHiJkLmNoP'
 // =============================================================================
