@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",
     "axios": "^1.11.0",
     "i18next": "^25.3.2",
     "lucide-react": "^0.344.0",

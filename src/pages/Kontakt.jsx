@@ -1,11 +1,5 @@
 import { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import emailjs from '@emailjs/browser'
-
-const EMAILJS_SERVICE_ID  = 'service_x0wu46u'   // z.B. 'service_abc123'
-const EMAILJS_TEMPLATE_ID = 'template_2rz7uko'  // z.B. 'template_xyz789'
-const EMAILJS_PUBLIC_KEY  = '8WgXb3qGbtBtEZ3Ya'   // z.B. 'aBcDeFgHiJkLmNoP'
-// =============================================================================
 
 export default function Kontakt() {
   const formRef = useRef()
@@ -19,28 +13,35 @@ export default function Kontakt() {
 
     setStatus('loading')
 
-    // Collect form data manually so we can include newsletter checkbox
     const data = new FormData(formRef.current)
-    const templateParams = {
-      company:    data.get('company') || '–',
-      fname:      data.get('fname'),
-      lname:      data.get('lname'),
-      email:      data.get('email'),
-      phone:      data.get('phone') || '–',
-      zip:        data.get('zip') || '–',
-      message:    data.get('message') || '–',
-      newsletter: newsletter ? 'Ja' : 'Nein',
-      to_email:   'info@smartersystem.de',
-    }
 
     try {
-      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_PUBLIC_KEY)
-      setStatus('success')
-      formRef.current.reset()
-      setPrivacy(false)
-      setNewsletter(false)
+      const res = await fetch('https://smartersystem.de/contact.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          company:    data.get('company') || '–',
+          fname:      data.get('fname'),
+          lname:      data.get('lname'),
+          email:      data.get('email'),
+          phone:      data.get('phone') || '–',
+          zip:        data.get('zip') || '–',
+          message:    data.get('message') || '–',
+          newsletter: newsletter ? 'Ja' : 'Nein',
+        })
+      })
+
+      const json = await res.json()
+      if (json.success) {
+        setStatus('success')
+        formRef.current.reset()
+        setPrivacy(false)
+        setNewsletter(false)
+      } else {
+        setStatus('error')
+      }
     } catch (err) {
-      console.error('EmailJS error:', err)
+      console.error('Fehler:', err)
       setStatus('error')
     }
   }
@@ -151,21 +152,21 @@ export default function Kontakt() {
 
               {/* Privacy */}
               <label className="flex items-start mb-3 cursor-pointer text-sm text-gray-500 leading-relaxed">
-              <input
-                type="checkbox"
-                checked={privacy}
-                onChange={e => setPrivacy(e.target.checked)}
-                className="w-4 h-4 flex-shrink-0 mt-0.5 accent-[#1A56E8]"
-                required
-              />
-              <span className="ml-2 min-w-0">
-                Ich habe die{" "}
-                <Link to="/datenschutz" className="text-[#1A56E8] underline">
-                  Datenschutzerklärung
-                </Link>{" "}
-                gelesen und bin damit einverstanden. *
-              </span>
-            </label>
+                <input
+                  type="checkbox"
+                  checked={privacy}
+                  onChange={e => setPrivacy(e.target.checked)}
+                  className="w-4 h-4 flex-shrink-0 mt-0.5 accent-[#1A56E8]"
+                  required
+                />
+                <span className="ml-2 min-w-0">
+                  Ich habe die{" "}
+                  <Link to="/datenschutz" className="text-[#1A56E8] underline">
+                    Datenschutzerklärung
+                  </Link>{" "}
+                  gelesen und bin damit einverstanden. *
+                </span>
+              </label>
 
               {/* Newsletter */}
               <label className="flex items-start gap-2.5 mb-6 cursor-pointer text-sm text-gray-500 leading-relaxed">
