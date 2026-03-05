@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import emailjs from '@emailjs/browser'
 
@@ -12,8 +12,6 @@ export default function Kontakt() {
   const [status, setStatus] = useState('idle') // idle | loading | success | error
   const [privacy, setPrivacy] = useState(false)
   const [newsletter, setNewsletter] = useState(false)
-  
-  useEffect(() => {emailjs.init(EMAILJS_PUBLIC_KEY)}, [])
 
   async function handleSubmit(e) {
     e.preventDefault()
