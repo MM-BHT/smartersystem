@@ -16,7 +16,7 @@ export default function Kontakt() {
     const data = new FormData(formRef.current)
 
     try {
-      const res = await fetch('https://smartersystem.de/contact.php', {
+      const res = await fetch('https://web.smartersystem.de/contact.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
