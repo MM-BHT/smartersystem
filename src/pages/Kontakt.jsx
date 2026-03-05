@@ -12,11 +12,8 @@ export default function Kontakt() {
   const [status, setStatus] = useState('idle') // idle | loading | success | error
   const [privacy, setPrivacy] = useState(false)
   const [newsletter, setNewsletter] = useState(false)
-  useEffect(() => {
-    emailjs.init({
-      publicKey: EMAILJS_PUBLIC_KEY,
-    })
-  }, [])
+  
+  useEffect(() => {emailjs.init(EMAILJS_PUBLIC_KEY)}, [])
 
   async function handleSubmit(e) {
     e.preventDefault()
