@@ -9,10 +9,8 @@ const sections = [
   )},
   { title: 'Verantwortlicher', content: (
     <p className="text-gray-500 text-sm leading-relaxed">
-      <strong>Sky Way Technology</strong><br />Eisackstraße 37<br />10827 Berlin<br />Deutschland<br /><br />
-      <strong>Vertretungsberechtigte Personen:</strong> Aleksandar Vukanovic, Marian Matijevic, Milos Geric<br />
+      <strong>Aleksandar Vukanovic</strong><br />Eisackstraße 37<br />10827 Berlin<br />Deutschland<br /><br />
       <strong>E-Mail-Adresse:</strong> info@smartersystem.de<br />
-      <strong>Telefon:</strong> 030 - 439 701 26
     </p>
   )},
   { title: 'Zugriffsdaten / Server-Logfiles', content: (
@@ -47,7 +45,7 @@ export default function Datenschutz() {
     <>
       <div className="px-[5%] py-24 text-center" style={{ background: 'linear-gradient(135deg, #0B1B4D, #1A56E8)' }}>
         <h1 className="font-playfair font-extrabold text-white mb-3" style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}>Datenschutzerklärung</h1>
-        <p className="text-white/75 text-base">Fassung: Juni 2025 | Sky Way Technology</p>
+        <p className="text-white/75 text-base">Fassung: Juni 2025 | Smarter System</p>
       </div>
 
       <div className="max-w-3xl mx-auto px-[5%] py-20">

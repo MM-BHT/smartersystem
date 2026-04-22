@@ -12,7 +12,7 @@ const services = [
 
 const steps = [
   { num: '1', icon: '🔍', title: 'Bedarfsanalyse', desc: 'In einer kostenlosen Erstberatung besprechen wir Ihre Wünsche und die baulichen Gegebenheiten vor Ort.' },
-  { num: '2', icon: '📋', title: 'Individuelle Planung', desc: 'Ich erstelle ein passgenaues Konzept. Alle Komponenten werden vorab konfiguriert, um die Installationszeit kurz zu halten.' },
+  { num: '2', icon: '📋', title: 'Individuelle Planung', desc: 'Wir erstellen ein passgenaues Konzept. Alle Komponenten werden vorab konfiguriert, um die Installationszeit kurz zu halten.' },
   { num: '3', icon: '🛠️', title: 'Fachgerechte Montage', desc: 'Die Nachrüstung erfolgt in kürzester Zeit – sauber, per Funk und ohne Arbeiten am Stromnetz oder der Bausubstanz.' },
   { num: '4', icon: '🎓', title: 'Einweisung & Übergabe', desc: 'Sie erhalten eine ausführliche Einweisung. Wir richten gemeinsam alle Funktionen ein, bis Sie sich sicher im Umgang fühlen.' },
 ]
@@ -25,10 +25,6 @@ const faqs = [
   {
     q: 'Mit welchen Kosten muss ich ungefähr rechnen?',
     a: 'Weil jeder Bedarf anders ist, können die Preise variieren. Ein solides Einstiegspaket beginnt häufig schon im dreistelligen Bereich. Wer umfangreichere Lösungen mit Sturzerkennung, Beschattung oder Heizungssteuerung wünscht, sollte mit Kosten zwischen 1.500 € und 3.500 € rechnen. Ich gebe Ihnen im kostenlosen Erstgespräch gerne eine erste Einschätzung.'
-  },
-  {
-    q: 'Besteht ein Anspruch auf finanzielle Unterstützung?',
-    a: 'Liegt ein Pflegegrad vor, lassen sich Zuschüsse für technische Assistenzsysteme bei der zuständigen Pflegekasse beantragen. Der maximale Förderbetrag für Maßnahmen zur Wohnumfeldverbesserung beträgt 4.000 €. Über Bewilligung und Abwicklung des Antragsverfahrens entscheidet die jeweilige Pflegekasse.'
   },
   {
     q: 'Welche Voraussetzungen müssen vor Ort gegeben sein?',
@@ -64,9 +60,9 @@ function FaqItem({ q, a }) {
 
 const housePoints = [
   { label: 'Beleuchtung', icon: '💡', tip: 'Automatisches Licht nach Tageszeit & Bewegung', style: { top: '50%', left: '74%' } },
-  { label: 'Türschloss', icon: '🔑', tip: 'Smarte Türschlösser – Zutritt per App, Code oder NFC', style: { top: '62%', left: '48%' } },
+  { label: 'Sicherheit', icon: '🔑', tip: 'Smarte Türschlösser – Zutritt per App, Code oder NFC', style: { top: '62%', left: '48%' } },
   { label: 'Kamera', icon: '📷', tip: 'HD-Überwachungskameras mit Live-Feed auf Ihr Smartphone', style: { top: '28%', left: '65%' } },
-  { label: 'Heizung', icon: '🌡️', tip: 'Intelligente Raumtemperatur spart bis zu 30% Energie', style: { top: '28%', left: '22%' } },
+  { label: 'Klima', icon: '🌡️', tip: 'Intelligente Raumtemperatur spart bis zu 30% Energie', style: { top: '28%', left: '22%' } },
   { label: 'Rollos', icon: '🏠', tip: 'Automatische Beschattung nach Sonnenstand & Wetter', style: { top: '50%', left: '58%' } },
   { label: 'Entertainment', icon: '🎵', tip: 'Multiroom-Audio und vernetzte Unterhaltung durch das ganze Haus', style: { top: '50%', left: '20%' } },
 ]
@@ -87,9 +83,6 @@ export default function Home() {
           <h1 className="font-playfair font-bold text-white leading-tight mb-5" style={{ fontSize: 'clamp(2.6rem, 5.5vw, 4rem)' }}>
             Ihr Zuhause. <br /><span className="italic opacity-90">Nur Smarter.</span>
           </h1>
-          <p className="text-white/80 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
-            Wir verwandeln Ihr Zuhause in ein intelligentes Smart Home – zur Miete, zur Pflege oder einfach für mehr Komfort. Kompetent. Sauber. Ohne Bohren.
-          </p>
         </div>
       </section>
 

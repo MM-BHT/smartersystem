@@ -8,7 +8,7 @@ export default function Impressum() {
       <div className="max-w-3xl mx-auto px-[5%] py-20">
         <div className="bg-[#F0F4FF] border border-[#1A56E8]/15 rounded-2xl p-6 mb-8">
           <p className="text-gray-900 leading-relaxed">
-            <strong>Sky Way Technology</strong><br />
+            <strong>Smarter System</strong><br />
             Eisackstraße 37<br />
             10827 Berlin<br />
             Deutschland
@@ -16,14 +16,11 @@ export default function Impressum() {
         </div>
 
         {[
-          { title: 'Handelsregister', content: (
-            <><strong>Handelsregister:</strong> [wird ergänzt]<br /><strong>Registergericht:</strong> [wird ergänzt]</>
-          )},
-          { title: 'Vertreten durch', content: 'Aleksandar Vukanovic, Marian Matijevic, Milos Geric' },
+          { title: 'Vertreten durch', content: 'Aleksandar Vukanovic' },
           { title: 'Kontakt', content: (
-            <><strong>Telefon:</strong> 030 - 439 701 26<br /><strong>E-Mail:</strong> <a href="mailto:info@smartersystem.de" className="text-[#1A56E8] underline">info@smartersystem.de</a></>
+            <><strong>Telefon:</strong> +49 15563 989382<br /><strong>E-Mail:</strong> <a href="mailto:info@smartersystem.de" className="text-[#1A56E8] underline">info@smartersystem.de</a></>
           )},
-          { title: 'Umsatzsteuer-ID', content: 'Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE' },
+          { title: 'Umsatzsteuer-ID', content: 'Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE461326297' },
         ].map((s, i) => (
           <div key={i}>
             <h2 className="font-playfair font-bold text-gray-900 text-xl mt-10 mb-3 pb-2 border-b-2 border-[#F0F4FF]">{s.title}</h2>
