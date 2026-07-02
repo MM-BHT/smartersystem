@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const services = [
-  { icon: '💡', title: 'Beleuchtung', desc: 'Automatische Lichtsteuerung nach Tageszeit und Anwesenheit. Dimmen, Farbwechsel und Szenarien für jeden Anlass. Energieeffiziente LED-Technik mit intelligenter Steuerung.' },
+  { icon: '💡', title: 'Beleuchtung', desc: 'Automatische Lichtsteuerung nach Tageszeit und Anwesenheit. Dimmen und Szenarien für jeden Anlass. Beschattung Ihrer Jalousie mit intelligenter Steuerung.' },
   { icon: '🌡️', title: 'Heizungssteuerung', desc: 'Intelligente Raumtemperaturregelung spart bis zu 30 % Heizkosten. Automatische Anpassung an Ihre Gewohnheiten und Zeitpläne.' },
   { icon: '🔒', title: 'Sicherheit', desc: 'Überwachungskameras, Bewegungsmelder und smarte Türschlösser. Benachrichtigungen auf Ihr Smartphone und automatische Reaktionen bei Abwesenheit.' },
   { icon: '📱', title: 'App-Steuerung', desc: 'Alles in einer App: Licht, Heizung, Sicherheit und mehr. Fernsteuerung von überall, Zeitschaltungen und individuelle Automatisierungen.' },
@@ -11,28 +11,28 @@ const services = [
 ]
 
 const steps = [
-  { num: '1', icon: '🔍', title: 'Bedarfsanalyse', desc: 'In einer kostenlosen Erstberatung besprechen wir Ihre Wünsche und die baulichen Gegebenheiten vor Ort.' },
-  { num: '2', icon: '📋', title: 'Individuelle Planung', desc: 'Wir erstellen ein passgenaues Konzept. Alle Komponenten werden vorab konfiguriert, um die Installationszeit kurz zu halten.' },
-  { num: '3', icon: '🛠️', title: 'Fachgerechte Montage', desc: 'Die Nachrüstung erfolgt in kürzester Zeit – sauber, per Funk und ohne Arbeiten am Stromnetz oder der Bausubstanz.' },
-  { num: '4', icon: '🎓', title: 'Einweisung & Übergabe', desc: 'Sie erhalten eine ausführliche Einweisung. Wir richten gemeinsam alle Funktionen ein, bis Sie sich sicher im Umgang fühlen.' },
+  { num: '1', icon: '🔍', title: 'Bedarfsanalyse', desc: 'In einer kostenlosen Erstberatung besprechen wir Ihre Wünsche und die baulichen Gegebenheiten.' },
+  { num: '2', icon: '📋', title: 'Individuelle Planung', desc: 'Wir erstellen ein passgenaues Konzept mit dem Ziel Ihre Erwartungen zu übertreffen.' },
+  { num: '3', icon: '🛠️', title: 'Fachgerechte Montage', desc: 'Die Installation erfolgt professionell und ohne Änderungen an der Bausubstanz.' },
+  { num: '4', icon: '🎓', title: 'Einweisung & Übergabe', desc: 'Sie erhalten eine gute Einweisung in die Bedienung Ihres Smart Homes. Eine einfache und selbsterklärende Handhabung der App ist uns wichtig.' },
 ]
 
 const faqs = [
   {
     q: 'Benötige ich für die Installation die Erlaubnis meines Vermieters?',
-    a: 'Da ausschließlich moderne Funktechnologie eingesetzt wird, entfallen bauliche Maßnahmen wie das Klopfen von Schlitzen oder das Verlegen von Kabeln vollständig. Die Systeme sind deshalb in aller Regel genehmigungsfrei und können bei einem Umzug ohne Rückstände wieder entfernt werden.'
+    a: 'Da ausschließlich moderne Funktechnologie eingesetzt wird, entfallen bauliche Maßnahmen wie das Klopfen von Schlitzen oder das Verlegen von Kabeln vollständig.'
   },
   {
     q: 'Welche Voraussetzungen müssen vor Ort gegeben sein?',
-    a: 'Entscheidend ist ein stabiler Internetanschluss (WLAN) sowie – für die Steuerung und Benachrichtigung von außen – ein Smartphone bei einer Vertrauensperson. Fehlt ein Internetanschluss, kann ich diesen kostengünstig über eine vorhandene Anschlussdose oder Mobilfunk einrichten. Alles Weitere bringe ich mit.'
+    a: 'Entscheidend ist ein Internetanschluss (WLAN) für die Steuerung und Benachrichtigung von außen. Viele Funktionen sind auch ohne ein einen Internetanschlus oder bei Ausfall weiterhin in Betrieb.'
   },
   {
     q: 'Was passiert, wenn das Internet einmal ausfällt?',
-    a: 'Lokale Funktionen wie automatisches Licht oder Türzutritt per Code laufen weiterhin problemlos. Lediglich die Benachrichtigung nach außen ist während des Ausfalls unterbrochen – bei einem Verbindungsabbruch wird zudem automatisch eine Meldung versandt. Sobald das Internet wieder verfügbar ist, stellt das System alle Verbindungen selbstständig wieder her.'
+    a: 'Lokale Funktionen wie automatisches Licht, Sicherheitsfunktionen und Heizungssteuerungen laufen weiterhin problemlos. Lediglich die Benachrichtigung nach außen ist während des Ausfalls unterbrochen. Sobald das Internet wieder verfügbar ist, stellt das System alle Verbindungen selbstständig wieder her.Die Technik arbeitet vollständig selbstständig im Hintergrund und lässt sich auch über klassische Wandschalter für Licht, Heizung, Rollos oder das Türschloss bedienen.'
   },
   {
-    q: 'Ist die Technik auch für Menschen ohne Smartphone-Erfahrung geeignet?',
-    a: 'Ein Smartphone oder Tablet ist keine zwingende Voraussetzung. Die Technik arbeitet vollständig selbstständig im Hintergrund und lässt sich auch über klassische Wandschalter für Licht, Heizung, Rollos oder das Türschloss bedienen. Das Smartphone wird ausschließlich von Vertrauenspersonen zur Information oder im Notfall genutzt.'
+    q: 'Ist die Technologie nur für Wohnungen und kleinere Projekte geeignet?',
+    a: 'Nein, das System ist vollkommen skalierbar und hat sich in Großprojekten längst bewährt. Neben dem privaten Wohnbau wird die Technik bereits erfolgreich in Bildungseinrichtungen wie Schulen, in Pflege- und Seniorenwohnheimen sowie in großflächigen Verwaltungs- und Gewerbegebäuden eingesetzt. Auch die Integration von Außenbereichen wie Gartenanlagen gehört zu unseren praxiserprobten Anwendungen..'
   },
 ]
 
