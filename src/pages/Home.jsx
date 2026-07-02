@@ -23,10 +23,6 @@ const faqs = [
     a: 'Da ausschließlich moderne Funktechnologie eingesetzt wird, entfallen bauliche Maßnahmen wie das Klopfen von Schlitzen oder das Verlegen von Kabeln vollständig. Die Systeme sind deshalb in aller Regel genehmigungsfrei und können bei einem Umzug ohne Rückstände wieder entfernt werden.'
   },
   {
-    q: 'Mit welchen Kosten muss ich ungefähr rechnen?',
-    a: 'Weil jeder Bedarf anders ist, können die Preise variieren. Ein solides Einstiegspaket beginnt häufig schon im dreistelligen Bereich. Wer umfangreichere Lösungen mit Sturzerkennung, Beschattung oder Heizungssteuerung wünscht, sollte mit Kosten zwischen 1.500 € und 3.500 € rechnen. Ich gebe Ihnen im kostenlosen Erstgespräch gerne eine erste Einschätzung.'
-  },
-  {
     q: 'Welche Voraussetzungen müssen vor Ort gegeben sein?',
     a: 'Entscheidend ist ein stabiler Internetanschluss (WLAN) sowie – für die Steuerung und Benachrichtigung von außen – ein Smartphone bei einer Vertrauensperson. Fehlt ein Internetanschluss, kann ich diesen kostengünstig über eine vorhandene Anschlussdose oder Mobilfunk einrichten. Alles Weitere bringe ich mit.'
   },
