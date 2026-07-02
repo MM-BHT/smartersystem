@@ -6,7 +6,7 @@ const services = [
   { icon: '🌡️', title: 'Heizungssteuerung', desc: 'Intelligente Raumtemperaturregelung spart bis zu 30 % Heizkosten. Automatische Anpassung an Ihre Gewohnheiten und Zeitpläne.' },
   { icon: '🔒', title: 'Sicherheit', desc: 'Überwachungskameras, Bewegungsmelder und smarte Türschlösser. Benachrichtigungen auf Ihr Smartphone und automatische Reaktionen bei Abwesenheit.' },
   { icon: '📱', title: 'App-Steuerung', desc: 'Alles in einer App: Licht, Heizung, Sicherheit und mehr. Fernsteuerung von überall, Zeitschaltungen und individuelle Automatisierungen.' },
-  { icon: '🔧', title: 'Nachrüst-Installation', desc: 'Smart Home für jede Immobilie Haus, Wohnung, Schule, Seniorenheim oder Büro. Unsere Systeme lassen sich sauber und schnell nachrüsten ohne bauliche Eingriffe.' },
+  { icon: '🔧', title: 'Nachrüst-Installation', desc: 'Smart Home für jede Immobilie ob Haus, Wohnung, Schule, Seniorenheim oder Büro. Unsere Systeme lassen sich sauber und schnell nachrüsten ohne bauliche Eingriffe.' },
   { icon: '✨', title: 'Komfort', desc: 'Szenarien wie „Guten Morgen" oder „Urlaub" steuern automatisch alle Geräte. Sprachsteuerung und Gestensteuerung für ultimativen Komfort.' },
 ]
 
