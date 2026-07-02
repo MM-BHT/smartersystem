@@ -28,11 +28,11 @@ const faqs = [
   },
   {
     q: 'Was passiert, wenn das Internet einmal ausfällt?',
-    a: 'Lokale Funktionen wie automatisches Licht, Sicherheitsfunktionen und Heizungssteuerungen laufen weiterhin problemlos. Lediglich die Benachrichtigung nach außen ist während des Ausfalls unterbrochen. Sobald das Internet wieder verfügbar ist, stellt das System alle Verbindungen selbstständig wieder her.Die Technik arbeitet vollständig selbstständig im Hintergrund und lässt sich auch über klassische Wandschalter für Licht, Heizung, Rollos oder das Türschloss bedienen.'
+    a: 'Viele Funktionen sind lokal, wie Sicherheitsfunktionen und Heizungssteuerungen und laufen weiterhin problemlos. Die Technik arbeitet selbstständig im Hintergrund und lässt sich auch über klassische Wandschalter für Licht, Heizung, Rollos oder das Türschloss bedienen. Lediglich die Benachrichtigung nach außen ist während des Ausfalls unterbrochen. Sobald das Internet wieder verfügbar ist, stellt das System alle Verbindungen selbstständig wieder her.'
   },
   {
     q: 'Ist die Technologie nur für Wohnungen und kleinere Projekte geeignet?',
-    a: 'Nein, das System ist vollkommen skalierbar und hat sich in Großprojekten längst bewährt. Neben dem privaten Wohnbau wird die Technik bereits erfolgreich in Bildungseinrichtungen wie Schulen, in Pflege- und Seniorenwohnheimen sowie in großflächigen Verwaltungs- und Gewerbegebäuden eingesetzt. Auch die Integration von Außenbereichen wie Gartenanlagen gehört zu unseren praxiserprobten Anwendungen..'
+    a: 'Nein, das System ist vollkommen skalierbar und hat sich in Großprojekten längst bewährt. Neben dem privaten Wohnbau wird die Technik bereits erfolgreich in Bildungseinrichtungen wie Schulen, in Pflege- und Seniorenwohnheimen sowie in großflächigen Verwaltungs- und Gewerbegebäuden eingesetzt. Auch die Integration von Außenbereichen wie Gartenanlagen gehört zu unseren praxiserprobten Anwendungen.'
   },
 ]
 
